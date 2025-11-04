@@ -1,0 +1,267 @@
+/* Ahmet Berke Carkci - MuscleFuel Phase 1 Project */
+
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body and fonts */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+}
+
+/* header part */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: #ff3c3c;
+}
+
+/* hero section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('../images/hero-bg.jpg') no-repeat center/cover;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .cta {
+    background-color: #ff3c3c;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero .cta:hover {
+    background-color: #e63333;
+}
+
+/*products section */
+.featured {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.featured h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.product-card a {
+    text-decoration: none;
+    color: #ff3c3c;
+    font-weight: bold;
+}
+
+.product-card a:hover {
+    color: #e63333;
+}
+
+/*  about and contact pages */
+.about, .contact-page {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about h2, .contact-page h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #1c1c1c;
+}
+
+.about p, .contact-page p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+.contact-form button {
+    background-color: #ff3c3c;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #e63333;
+}
+
+/* product pages */
+.product-page {
+    padding: 60px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.product-page img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.product-page h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.product-page p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.product-page ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.product-page button {
+    background-color: #ff3c3c;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-page button:hover {
+    background-color: #e63333;
+}
+
+/* shop page */
+.shop-page {
+    padding: 60px 20px;
+}
+
+.shop-page .shop-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.shop-page .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #1c1c1c;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ff3c3c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e63333;
+}
+
+/* we do responsive our website as well */
+ @media (max-width: 768px) {
+    .products, .product-grid {
+        flex-direction: column;
+        align-items: center;
+ 
+    }
+
+    header {
+        
+        flex-direction: column;
+        gap: 15px;
+    }
+}
